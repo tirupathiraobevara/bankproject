@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'app1/base.html'%}
+{%block body_block%}
+<div class="container" align="center">
+    <h1> Login to view Account Details</h1>
+    <form method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <button type="submit" class='btn btn-lg btn-primary'>login</button>
+    </form>
+</div>
+{%endblock%}
